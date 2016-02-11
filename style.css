@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	height: 100%;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 14px;
+	width: 100%;
+	padding-bottom: 100px;
+	padding-top: 50px;
+	background: red; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left top, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1));
+}
+
+.main-wrapper {
+	width: 100%;
+	height: 100%;
+	
+	
+}
+
+h1 {
+	color: rgba(56,78,100,1.00);
+	text-align: center;
+	text-shadow: 2px 2px 2px #D3C6C6;
+	font-size: 72px;
+}
+
+p {
+	font-size: 23px;
+	letter-spacing: 1px;
+	color: rgba(210,224,236,1.00);
+}
+
+.input-wrapper {
+	background-color: rgba(86,93,100,.80);
+	width: 285px;
+	height: 70px;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: #D5D5D5;
+	border-width: 2px;
+	border-radius: 10px;
+	line-height: 70px;
+}
+
+.input-text {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.guess {
+	font-size:50px;
+}
+
+.submit-btn {
+	margin: 0 auto;
+	background-color: rgba(99,138,177,0.79);
+	height: 55px;
+	width: 141px;
+	border-style: solid;
+	border-color: #D5D5D5;
+	border-width: 2px;
+	border-radius: 10px;
+	line-height: 55px;
+}
+
+.spacer {
+	width: 100%;
+	height: 10px;
+}
+.top-spacer {
+	width: 100%;
+	height: 50px;
+}
+
+.box-text {
+	text-align: center;
+	margin: 0 auto;
+		
+}
+
+.bottom-button-wrapper {
+	width: 439px;
+	height: 80px;
+	margin: 0 auto;
+	padding-top: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/*background-color: #C1C1C1;*/
+}
+.play-again {
+	height:80%;
+	line-height: 74px;
+	width:200px;
+	float:left;
+	border: 2px solid #D5D5D5;
+	border-radius: 10px;
+	background-color: rgba(86,93,100,.80);
+}
+
+.display-digit {
+	height: 80%;
+	line-height: 74px;
+	width: 200px;
+	float: right;
+	border: 2px solid #D5D5D5;
+	border-radius: 10px;
+	background-color: rgba(86,93,100,.80);
+}
+
+.input-Text {
+	color: black;
+}
+
+input[type=text] {
+	font-size: 23px;
+	letter-spacing: 1px;
+	color: rgba(210,224,236,1.00);
+	border: none;
+	margin: 0 auto;
+	width: 80%;
+}
+	
