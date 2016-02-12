@@ -56,6 +56,7 @@ function guessEntered() {
 	highOrLow(playerGuess);
 	
 	checkGuess();
+	$('#playerNumber').val('');
 	if(guessCount >= 5) {
 		gameOver();
 	}
