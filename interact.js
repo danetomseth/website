@@ -48,8 +48,8 @@ $(document).ready(function() {
 
 function guessEntered() {
 	playerGuess = +$('#playerNumber').val();
-	$('#playerNumber').val('New enter');
-	alert('here');
+	$('#playerNumber').val('');
+	
 	guessCount++;
 	$('#checkInput').text("Last Guess: "+playerGuess);
 	$('#guessNumber').text("Guess Left: "+(5- guessCount));
