@@ -48,6 +48,8 @@ $(document).ready(function() {
 
 function guessEntered() {
 	playerGuess = +$('#playerNumber').val();
+	$('#playerNumber').val('New enter');
+	alert('here');
 	guessCount++;
 	$('#checkInput').text("Last Guess: "+playerGuess);
 	$('#guessNumber').text("Guess Left: "+(5- guessCount));
@@ -56,7 +58,7 @@ function guessEntered() {
 	highOrLow(playerGuess);
 	
 	checkGuess();
-	$('#playerNumber').val('');
+	
 	if(guessCount >= 5) {
 		gameOver();
 	}
