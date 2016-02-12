@@ -31,7 +31,9 @@ $(document).ready(function() {
 	
 	
 	$('#playerNumber').keypress(function(key) {
+		
 		if(key.which == 13) {
+			key.preventDefault();
     	//playerGuess = +$(this).val();
 		//$('#checkInput').text(playerGuess);
 		guessEntered();
