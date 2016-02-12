@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 
-<link rel="stylesheet" type="text/css" href="style.css">
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="interact.js"></script>
-
+<link rel="stylesheet" type="text/css" href="style.css">
 
 <!--<script>
 $(document).ready(function(){
@@ -23,28 +24,29 @@ $(document).ready(function(){
 <div class="main-wrapper">
 <h1>Guess The Number</h1>
 <div class="top-spacer"></div>
-<div class="input-wrapper">
+
 <form>
-<p class="input-text">
-	<input type="text" id="guessNumber" value="1-100">
-</p>
+<div class="top-container">
+
+
+<input type="text" id="playerNumber" value="10" class="numberInput" >
+
+
+
+
+<button class="submit-btn " type="button" id="submitGuess" >
+	Submit Guess
+</button>
 </form>
+<div id="guessResult"><p id="guessHighlight">
+</p></div>
+<p id="checkInput"></p>
+<p id="guessNumber"></p>
+<p id="correctNumber"></p>
 </div>
-<div class="input-wrapper">
-
-<p class="input-Text box-text">
-	No Number
-</p>
-
-</div>
-<div class="spacer"></div>
 
 <div class="spacer"></div>
-<div class="submit-btn">
-<p class="box-text">Sumbit</p>
-</div>
-<div class="spacer"></div>
-<div class="bottom-button-wrapper">
+<div class="bottom-container">
 <div class="play-again">
 <p class="box-text">Play Again</p>
 </div>
