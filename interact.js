@@ -49,6 +49,7 @@ $(document).ready(function() {
 function guessEntered() {
 	playerGuess = +$('#playerNumber').val();
 	$('#playerNumber').val('');
+	//comment
 	
 	guessCount++;
 	$('#checkInput').text("Last Guess: "+playerGuess);
