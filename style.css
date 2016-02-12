@@ -9,17 +9,20 @@ html {
 	font-size: 14px;
 	width: 100%;
 	
-	background: red; /* For browsers that do not support gradients */    
-    background: -webkit-linear-gradient(left top, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1));
+	/*background: red; 
+    background: -webkit-linear-gradient(left top, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); 
+    background: -o-linear-gradient(bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); 
+    background: -moz-linear-gradient(bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1)); 
+    background: linear-gradient(to bottom right, rgba(127,178,228,0.79), rgba(127,246,251,0.1));*/
+	background-image: url("new_year_background.png");
 }
 
 .main-wrapper {
 	margin: 0 auto;
 	padding-top: 20px;
-	background-color: rgba(205,205,205,1.00);
+	background-color: rgba(205,205,205,.70);
+	
+	box-shadow: 5px 5px 3px #888888;
 	width: 980px;
 	height: 100%;
 	min-height: 800px;	
@@ -27,10 +30,11 @@ html {
 }
 
 h1 {
-	color: rgba(56,78,100,1.00);
+	color: rgba(12,181,221,1.00);
 	text-align: center;
 	text-shadow: 2px 2px 2px #D3C6C6;
 	font-size: 72px;
+	text-shadow: 2px 2px grey;
 }
 
 p {
@@ -79,18 +83,18 @@ p {
 
 .bottom-container {
 	width: 439px;
-	height: 80px;
+	height: 60px;
 	margin: 0 auto;
 	
-	padding-top: 8px;
+	
 	padding-left: 20px;
 	padding-right: 20px;
-	background-color: rgba(126,126,126,0.1);
+	/*background-color: rgba(126,126,126,0.1);*/
 	/*background-color: #C1C1C1;*/
 }
 .play-again {
-	height:80%;
-	line-height: 74px;
+	height:100%;
+	line-height: 56px;
 	width:200px;
 	float:left;
 	border: 2px solid #D5D5D5;
@@ -99,8 +103,8 @@ p {
 }
 
 .display-digit {
-	height: 80%;
-	line-height: 74px;
+	height: 100%;
+	line-height: 56px;
 	width: 200px;
 	float: right;
 	border: 2px solid #D5D5D5;
@@ -117,11 +121,12 @@ p {
 	font-size: 23px;
 	letter-spacing: 1px;
 	color: rgba(210,224,236,1.00);
-	
+	background-color: grey;
 	margin: 0 auto;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	width: 60%;
+	height:40px;
 	text-align: center;
 	border-style: solid;
 	border-color: #D5D5D5;
@@ -130,7 +135,7 @@ p {
 
 .top-container {
 	width: 500px;
-	background-color: rgba(126,126,126,0.1);
+	/*background-color: rgba(126,126,126,0.1);*/
 	padding: 10px;
 	height: auto;
 	margin: 0 auto;
@@ -168,5 +173,38 @@ p {
 	width:100%;
 	line-height:50px;
 	color: black;	
+}
+
+#status-bar {
+	display:none;
+	width: ;
+	height: 10px;
+	
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: red;
+}
+
+#hint {
+	display: none;
+	width:400px;
+	height:50px;
+	margin: 0 auto;
+	
+	text-align: center;
+}
+#hint-text {
+	
+	height: 100%;
+	width: 100%;
+	line-height: 50px;
+	margin: 0 auto;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.test {
+	color: black;
 }
 	

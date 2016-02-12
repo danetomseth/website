@@ -27,6 +27,7 @@ $(document).ready(function(){
 
 <form>
 <div class="top-container">
+<div id="hint"><p id="hint-text">Number is:</p></div>
 
 
 <input type="text" id="playerNumber" value="10" class="numberInput" autocomplete="off" >
@@ -38,21 +39,25 @@ $(document).ready(function(){
 	Submit Guess
 </button>
 </form>
+<div id="status-bar"></div>
 <div id="guessResult"><p id="guessHighlight">
 </p></div>
-<p id="checkInput"></p>
-<p id="guessNumber"></p>
-<p id="correctNumber"></p>
+<p id="checkInput" class="test"></p>
+<p id="guessNumber" class="test"></p>
+<p id="correctNumber" class="test"></p>
 </div>
 
 <div class="spacer"></div>
 <div class="bottom-container">
-<div class="play-again">
+<button class="play-again" id="restart">
 <p class="box-text">Play Again</p>
-</div>
-<div class="display-digit">
+</button>
+
+<button class="display-digit" id="giveHint">
+
 <p class="box-text">Show Digit</p>
-</div>
+
+</button>
 </div>
 </div>
 
