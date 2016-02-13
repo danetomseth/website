@@ -15,7 +15,7 @@ var hintTaken = false;
 });*/
 
 $(document).ready(function() {
-	$('#playerNumber').val('Input Number');
+	$('#playerNumber').val('Input Number 1-100');
 	$('#correctNumber').text("Winning number: "+winningNumber);
 	$('#guessNumber').text("Guess Left: "+(5- guessCount));
 	
@@ -29,17 +29,17 @@ $(document).ready(function() {
 		var numLength = numString.length;
 		if(numLength === 1) {
 			
-			$('#hint').show();
-			$('#hint').find('#hint-text').text('Only One Digit!');
+			$('#guessResult').show();
+			$('#guessResult').text('Only One Digit!');
 		}
 		else if(!hintTaken) {
     	
-		$('#hint').show();
-		$('#hint').find('#hint-text').text('One of the digits is: ' + numString[randomDigit]);
+		$('#guessResult').show();
+		$('#guessResult').text('One of the digits is: ' + numString[randomDigit]);
 		hintTaken = true;
 		}
 		else {
-			$('#hint').find('#hint-text').text('Nobody Likes a Cheater!');
+			$('#guessResult').text('Nobody Likes a Cheater!');
 		}
 		
 		
@@ -80,7 +80,7 @@ function guessEntered() {
 	
 	guessCount++;
 	$('#checkInput').text("Last Guess: "+playerGuess);
-	$('#guessNumber').text("Guess Left: "+(5- guessCount));
+	$('#guessNumber').text("Guesses Left: "+(5- guessCount));
 	
 	
 	highOrLow(playerGuess);
@@ -94,8 +94,8 @@ function guessEntered() {
 
 function highOrLow(number) {
 	//$(".Text").css('margin-top', vertAlign);
-	var distanceOff = Math.abs(winningNumber - number) * 5;
-	$('#status-bar').show();
+	var distanceOff = (1 - (Math.abs(winningNumber - number) / winningNumber)) * 500;
+	$('.status-wrapper').show();
 	$('#status-bar').css('width', distanceOff);
 	
 	
@@ -114,20 +114,28 @@ function highOrLow(number) {
 
 function resultBox(result) {
 	if(result == 'low') {
-		$('#guessResult').css({'background-color': 'red'});
+		
 		$('#guessResult').show();
-		$('#guessResult').find('#guessHighlight').text('Too Low');
+		$('#guessResult').text('Too Low');
 	}
 	else if(result == 'high') {
-		$('#guessResult').css({'background-color': 'green'});
+		
 		$('#guessResult').show();
-		$('#guessResult').find('#guessHighlight').text('Too High');
+		$('#guessResult').text('Too High');
 		
 	}
 }
 
 function gameOver() {
+	$('#changeTitle').text('Game Over');
+	$('#changeTitle').css('color', 'black');
+	$('.main-wrapper').css('background-color', 'red');
+	setTimeout(startOver, 2000);
 	
+}
+
+function startOver() {
+	location.reload();
 }
 
 
@@ -156,6 +164,7 @@ function changeText () {
 function generateWinningNumber (){
     
 	$('#guessNumber').val(winningNumber);
+	
 };
 
 

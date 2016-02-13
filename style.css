@@ -69,6 +69,7 @@ p {
 .spacer {
 	width: 100%;
 	height: 10px;
+	clear: both;
 }
 .top-spacer {
 	width: 100%;
@@ -78,38 +79,49 @@ p {
 .box-text {
 	text-align: center;
 	margin: 0 auto;
+	color: black;
 		
 }
 
 .bottom-container {
-	width: 439px;
-	height: 60px;
+	width: 450px;
+	height: 40px;
 	margin: 0 auto;
 	
 	
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
 	/*background-color: rgba(126,126,126,0.1);*/
 	/*background-color: #C1C1C1;*/
 }
 .play-again {
-	height:100%;
-	line-height: 56px;
-	width:200px;
-	float:left;
-	border: 2px solid #D5D5D5;
-	border-radius: 10px;
-	background-color: rgba(86,93,100,.80);
+	font-size:14px;
+	margin-left: 50px;
+	height: 100%;
+	line-height: 33px;
+	width: 150px;
+	float: left;
+	border: 2px solid rgba(165,165,165,1.00);
+	border-radius: 4px;
+	background-color: rgba(201,201,201,1.00);
+	
 }
 
+.play-again:hover {
+	background-color: rgba(221,221,0,1.00);
+}
 .display-digit {
 	height: 100%;
-	line-height: 56px;
-	width: 200px;
+	margin-right: 50px;
+	line-height: 33px;
+	width: 150px;
 	float: right;
-	border: 2px solid #D5D5D5;
-	border-radius: 10px;
-	background-color: rgba(86,93,100,.80);
+	border: 2px solid rgba(165,165,165,1.00);
+	border-radius: 8px;
+	background-color: rgba(201,201,201,1.00);	
+}
+.display-digit:hover {
+	background-color: rgba(151,189,255,1.00);
 }
 
 .input-Text {
@@ -120,17 +132,17 @@ p {
 	display: block;
 	font-size: 23px;
 	letter-spacing: 1px;
-	color: rgba(210,224,236,1.00);
-	background-color: grey;
+	color: rgba(0,0,0,1.00);
+	background-color: rgba(246,246,246,1.00);
 	margin: 0 auto;
+	
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 	width: 60%;
-	height:40px;
+	height: 40px;
 	text-align: center;
-	border-style: solid;
-	border-color: #D5D5D5;
-	border-width: 2px;
+	border: 2px solid rgba(165,165,165,1.00);
+	border-radius: 4px;
 }
 
 .top-container {
@@ -142,29 +154,37 @@ p {
 }
 
 .submit-btn {
-	display:block;
+	display: block;
 	margin: 0 auto;
-	background-color: rgba(99,138,177,0.79);
-	height: 55px;
-	width: 35%;
-	border-style: solid;
-	border-color: #D5D5D5;
-	border-width: 2px;
-	border-radius: 10px;
-	line-height: 53px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	background-color: rgba(102,203,65,0.62);
+	height: auto;
+	width: 150px;
+	border: 2px solid rgba(165,165,165,1.00);
+	border-radius: 4px;
+	line-height: 37px;
 	text-align: center;
-	padding: 0px;
-	font-size:14px;
+	font-size: 23px;
+	letter-spacing: 1px;
+	color: rgba(0,0,0,1.00);
 }
 
-#guessResult {
-	display: none;
-	width:100%;
+.submit-btn:hover {
+	background-color: rgba(254,0,0,1.00);
+}
+
+
+#guess-spacer {
 	height:50px;
-	margin: 0 auto;
-	margin-top: 10px;
+	width:100%;
+	text-align:center;
 	
-	background-color: red;
+}
+#guessResult {
+	display:none;
+	margin:0 auto;
+	color:black;
 }
 
 #guessHighlight {
@@ -176,13 +196,42 @@ p {
 }
 
 #status-bar {
-	display:none;
-	width: ;
-	height: 10px;
+	width: 100px;
+	height: 28px;
+	border-radius: 8px;
 	
+	//margin: 0 auto;
+	background-color: rgba(0,199,28,0.70);
+}
+.status-wrapper {
+	display: none;
+	width: 600px;
+	height: 28px;
 	margin: 0 auto;
-	margin-top: 10px;
-	background-color: red;
+	border: 2px solid rgba(108,108,108,1.00);
+	border-radius: 10px;
+	margin-bottom: 10px;	
+}
+.status-text {
+	display: block;
+	color: black;
+	margin: 0px;
+	height: 28px;
+	line-height: 26px;
+	padding-top: 3px;
+	font-weight: bold;
+	
+}
+.cold {
+	float:left;
+	margin-left: 15px;
+	color: blue;
+	
+}
+.hot {
+	float:right;
+	margin-right: 15px;
+	color: red;
 }
 
 #hint {
@@ -206,5 +255,18 @@ p {
 
 .test {
 	color: black;
+}
+
+#guessLeft {
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+}
+#guessNumber {
+	padding-bottom: 5px;
+	border-bottom-style:solid;
+	border-bottom-width: 2px;
+	
+	border-color: rgba(108,108,108,1.00);
 }
 	

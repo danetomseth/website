@@ -22,12 +22,21 @@ $(document).ready(function(){
 
 <body>
 <div class="main-wrapper">
-<h1>Guess The Number</h1>
-<div class="top-spacer"></div>
+<h1 id="changeTitle">Guess The Number</h1>
+<div class="top-spacer">
+<div class="status-wrapper">
+<p class="status-text cold">COLD</p><p class="status-text hot">HOT</p><div id="status-bar"></div>
+
+</div>
+</div>
 
 <form>
 <div class="top-container">
-<div id="hint"><p id="hint-text">Number is:</p></div>
+<div id="guessLeft">
+<p id="guessNumber" class="test"></p>
+</div>
+
+<div id="guess-spacer"><p id="guessResult">low</p></div>
 
 
 <input type="text" id="playerNumber" value="10" class="numberInput" autocomplete="off" >
@@ -36,19 +45,20 @@ $(document).ready(function(){
 
 
 <button class="submit-btn " type="button" id="submitGuess" >
-	Submit Guess
+	Submit 
 </button>
 </form>
-<div id="status-bar"></div>
-<div id="guessResult"><p id="guessHighlight">
-</p></div>
-<p id="checkInput" class="test"></p>
-<p id="guessNumber" class="test"></p>
-<p id="correctNumber" class="test"></p>
 </div>
 
-<div class="spacer"></div>
+<!--<div id="guessResult"><p id="guessHighlight">
+</p>
+
+</div>-->
+
+
+
 <div class="bottom-container">
+
 <button class="play-again" id="restart">
 <p class="box-text">Play Again</p>
 </button>
